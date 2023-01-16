@@ -10,3 +10,22 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+#app{
+    background-color: rgb(238, 238, 238);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* .stop-watch{
+    height: 85vh;
+    width: 23vw;
+    background-color: #0d0c1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+} */
