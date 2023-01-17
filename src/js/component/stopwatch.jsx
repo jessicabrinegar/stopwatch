@@ -8,11 +8,12 @@ const Stopwatch = () => {
     const [isPaused, setIsPaused] = useState(true);
     const [time, setTime] = useState(0);
     
-    React.useEffect(() => {
+    useEffect(() => {
       let interval = null;
-    
+
       if (isActive && isPaused === false) {
         interval = setInterval(() => {
+           //update the time every 10 ms
           setTime((time) => time + 10);
         }, 10);
       } else {
@@ -22,6 +23,8 @@ const Stopwatch = () => {
         clearInterval(interval);
       };
     }, [isActive, isPaused]);
+
+    
     const handleStart = () => {
         setIsActive(true);
         setIsPaused(false);
